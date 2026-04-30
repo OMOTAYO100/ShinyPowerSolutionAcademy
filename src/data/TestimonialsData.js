@@ -1,4 +1,4 @@
-import TestimonialImg1  from "../assets/testimonial-img1.webp";
+import TestimonialImg1  from "../assets/Testimonial-img1.webp";
 import TestimonialImg2  from "../assets/Avatar-1.webp";
 import TestimonialImg3  from "../assets/Avatar-2.webp";
 import TestimonialImg4  from "../assets/Avatar-3.webp";

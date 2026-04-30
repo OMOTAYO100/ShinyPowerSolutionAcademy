@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Cards } from "../data/WhyChooseUsData";
 import { Icon } from "@iconify/react";
-import ChooseUsImage1 from "../assets/WhyChooseUs-image1.webp";
-import ChooseUsImage2 from "../assets/WhyChooseUs-image2.webp";
-import ChooseUsImage3 from "../assets/WhyChooseUs-image3.webp";
-import ChooseUsImage4 from "../assets/WhyChooseUs-image4.webp";
-import ChooseUsImage5 from "../assets/WhyChooseUs-image5.webp";
-import ChooseUsImage6 from "../assets/WhyChooseUs-image6.webp";
+import ChooseUsImage1 from "../assets/WhyChooseUs-Image1.webp";
+import ChooseUsImage2 from "../assets/WhyChooseUs-Image2.webp";
+import ChooseUsImage3 from "../assets/WhyChooseUs-Image3.webp";
+import ChooseUsImage4 from "../assets/WhyChooseUs-Image4.webp";
+import ChooseUsImage5 from "../assets/WhyChooseUs-Image5.webp";
+import ChooseUsImage6 from "../assets/WhyChooseUs-Image6.webp";
 
 function WhyChooseUS() {
   const [openIndex, setOpenIndex] = useState(null);
