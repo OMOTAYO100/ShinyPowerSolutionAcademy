@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Enrol() {
   return (
-    <section className="p-6 mt-12 flex flex-col gap-6 overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="enrol" className="p-6 mt-12 flex flex-col gap-6 overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

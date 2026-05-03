@@ -1,1 +1,5 @@
 /* Removed redundant tailwindcss import */
+
+html {
+  scroll-behavior: smooth;
+}

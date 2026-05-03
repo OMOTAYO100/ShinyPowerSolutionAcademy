@@ -19,7 +19,7 @@ function WhyChooseUS() {
 
   return (
     <>
-      <section className="p-6 mt-12 flex flex-col gap-6 overflow-hidden">
+      <section id="why-choose-us" className="p-6 mt-12 flex flex-col gap-6 overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

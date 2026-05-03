@@ -11,7 +11,7 @@ const iconClass = "w-6 h-6 hover:text-[#00A859] transition-colors cursor-pointer
 
 function Footer() {
   return (
-    <div className="flex flex-col w-full font-lato">
+    <div id="footer" className="flex flex-col w-full font-lato">
       
       {/* Top CTA Banner Section */}
       <motion.div 
@@ -70,9 +70,9 @@ function Footer() {
             <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-6 text-lg transition-colors duration-300">Quick Links</h3>
             <ul className="space-y-4 text-gray-700 dark:text-gray-400 font-medium">
               <li><a href="#curriculum" className="hover:text-[#00A859] transition-colors">Curriculum</a></li>
-              <li><a href="#how-it-works" className="hover:text-[#00A859] transition-colors">How It Works</a></li>
-              <li><a href="#benefits" className="hover:text-[#00A859] transition-colors">Benefits</a></li>
-              <li><a href="#testimonials" className="hover:text-[#00A859] transition-colors">Testimonials</a></li>
+              <li><a href="#why-choose-us" className="hover:text-[#00A859] transition-colors">How It Works</a></li>
+              <li><a href="#about" className="hover:text-[#00A859] transition-colors">About Us</a></li>
+              <li><a href="#enrol" className="hover:text-[#00A859] transition-colors">Enrolment</a></li>
             </ul>
           </div>
           
@@ -125,7 +125,7 @@ function Footer() {
           ></div>
           
           <div className="relative z-10 w-full overflow-hidden flex flex-col items-center justify-center pt-16 md:pt-24 pb-8">
-            <h1 className="text-[25vw] md:text-[clamp(150px,22vw,350px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300">
+            <h1 className="text-[25vw] md:text-[clamp(200px,33vw,490px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300">
               SHINY
             </h1>
             

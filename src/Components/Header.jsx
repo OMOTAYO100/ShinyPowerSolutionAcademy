@@ -94,32 +94,34 @@ function Header() {
         className="relative z-50 w-full sm:w-[65%] md:w-[70%] lg:w-[55%] sm:mx-auto flex items-center justify-between px-6 sm:bg-white/95 dark:sm:bg-[#1a1d27]/90 sm:backdrop-blur-md rounded-full sm:py-1 transition-colors duration-300"
       >
         {/* Logo */}
-        <img
-          className="size-14 sm:size-16 rounded-full object-cover"
-          src={ShinyLogo}
-          alt="Shiny Logo"
-        />
+        <a href="/" className="cursor-pointer">
+          <img
+            className="size-14 sm:size-16 rounded-full object-cover"
+            src={ShinyLogo}
+            alt="Shiny Logo"
+          />
+        </a>
 
         {/* Desktop Nav Links */}
         <ul className="hidden sm:flex sm:flex-row sm:gap-6 items-center">
           <li>
-            <a href="#home" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">About</a>
+            <a href="#about" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">About</a>
           </li>
           <li>
-            <a href="#about" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">Curriculum</a>
+            <a href="#curriculum" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">Curriculum</a>
           </li>
           <li>
-            <a href="#services" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">How it Works</a>
+            <a href="#why-choose-us" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">How it Works</a>
           </li>
           <li>
-            <a href="#contact" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">Register</a>
+            <a href="#enrol" className="text-[#737373] dark:text-[#a0a0b0] hover:text-[#00A859] transition-colors duration-200 font-lato text-sm">Register</a>
           </li>
         </ul>
 
         {/* Desktop: Dark Mode Toggle + Enrol Button */}
         <div className="hidden sm:flex items-center gap-3">
           <DarkModeToggle />
-          <a href="#contact" className="bg-[#00A859] text-white px-5 py-2 rounded-full font-lato font-semibold text-sm hover:bg-[#008c4a] transition-all duration-300 shadow-md hover:shadow-lg">
+          <a href="#enrol" className="bg-[#00A859] text-white px-5 py-2 rounded-full font-lato font-semibold text-sm hover:bg-[#008c4a] transition-all duration-300 shadow-md hover:shadow-lg">
             Enrol Now
           </a>
         </div>
@@ -154,10 +156,10 @@ function Header() {
           menuOpen ? "scale-x-100" : "scale-x-0"
         }`}
       >
-        <a href="#home" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">About</a>
-        <a href="#about" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">Curriculum</a>
-        <a href="#services" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">How it Works</a>
-        <a href="#contact" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">Register</a>
+        <a href="#about" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">About</a>
+        <a href="#curriculum" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">Curriculum</a>
+        <a href="#why-choose-us" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">How it Works</a>
+        <a href="#enrol" onClick={() => setMenuOpen(false)} className="text-[#333] dark:text-gray-200 text-lg font-lato font-medium hover:text-[#00A859] transition-colors">Register</a>
         
         {/* Mobile Dark Mode Toggle */}
         <div className="flex items-center gap-3 mt-2">
@@ -165,7 +167,7 @@ function Header() {
           <DarkModeToggle />
         </div>
 
-        <a href="#contact" onClick={() => setMenuOpen(false)} className="mt-4 text-center bg-[#00A859] text-white px-5 py-3 rounded-full font-lato font-semibold hover:bg-[#008c4a] transition-all duration-300">
+        <a href="#enrol" onClick={() => setMenuOpen(false)} className="mt-4 text-center bg-[#00A859] text-white px-5 py-3 rounded-full font-lato font-semibold hover:bg-[#008c4a] transition-all duration-300">
           Enrol Now
         </a>
       </div>
@@ -231,14 +233,14 @@ function Header() {
             {/* Buttons */}
             <div className="flex items-center gap-4">
               <a
-                href="#"
-                className="bg-[#00A859] text-white px-14 sm:px-8 md:px-10 py-3 rounded-full font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-[#008c4a] hover:scale-105 transition-all duration-300 shadow-lg"
+                href="#enrol"
+                className="bg-[#00A859] text-white px-8 sm:px-10 py-3 rounded-full font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-[#008c4a] hover:scale-105 transition-all duration-300 shadow-lg"
               >
-                Enrol Now
+                Enroll Now
               </a>
               <a
-                href="#"
-                className="px-14 sm:px-8 md:px-10 py-3 rounded-full text-white border-2 border-white font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-white hover:text-[#333] transition-all duration-300"
+                href="#footer"
+                className="px-8 sm:px-10 py-3 rounded-full text-white border-2 border-white font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-white hover:text-[#333] transition-all duration-300"
               >
                 Contact Us
               </a>
