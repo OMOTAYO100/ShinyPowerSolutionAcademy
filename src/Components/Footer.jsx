@@ -125,7 +125,7 @@ function Footer() {
           ></div>
           
           <div className="relative z-10 w-full overflow-hidden flex flex-col items-center justify-center pt-16 md:pt-24 pb-8">
-            <h1 className="text-[25vw] md:text-[clamp(200px,33vw,490px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300">
+            <h1 className="text-[33vw] md:text-[clamp(200px,33vw,490px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300">
               SHINY
             </h1>
             
