@@ -69,8 +69,8 @@ function Curriculum() {
               What you will learn
             </h3>
             <h2 className="sm:w-[50%] mt-6 text-3xl sm:text-4xl md:text-6xl font-bold font-lato dark:text-gray-100 transition-colors duration-300">
-              A complete Curriculum built for{" "}
-              <span className="text-[#00A859] dark:text-[#00C96B]">Real Results</span>
+              A complete Solar Installation Curriculum built for{" "}
+              <span className="text-[#00A859] dark:text-[#00C96B]">Real Results In Nigeria</span>
             </h2>
           </motion.div>
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shinypowersolutionacademy.netlify.app/sitemap.xml
+Sitemap: https://shinypoweracademy.com/sitemap.xml

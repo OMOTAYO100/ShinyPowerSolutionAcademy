@@ -18,24 +18,24 @@
     <meta name="ICBM" content="7.3775, 3.9470" />
 
     <!-- ========== CANONICAL ========== -->
-    <link rel="canonical" href="https://shinypowersolutionacademy.netlify.app/" />
+    <link rel="canonical" href="https://shinypoweracademy.com/" />
 
     <!-- ========== OPEN GRAPH / FACEBOOK ========== -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shinypowersolutionacademy.netlify.app/" />
+    <meta property="og:url" content="https://shinypoweracademy.com/" />
     <meta property="og:title" content="Shiny Power Solution Academy | Solar Training in Ibadan, Nigeria" />
     <meta property="og:description" content="Get hands-on solar installation training in Ibadan. Certified by industry experts. Join 1200+ students across Africa. Enroll now at Shiny Power Solution Academy." />
-    <meta property="og:image" content="https://shinypowersolutionacademy.netlify.app/shiny-logo-1.png" />
+    <meta property="og:image" content="https://shinypoweracademy.com/shiny-logo-1.png" />
     <meta property="og:image:alt" content="Shiny Power Solution Academy Logo" />
     <meta property="og:site_name" content="Shiny Power Solution Academy" />
     <meta property="og:locale" content="en_NG" />
 
     <!-- ========== TWITTER CARD ========== -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://shinypowersolutionacademy.netlify.app/" />
+    <meta name="twitter:url" content="https://shinypoweracademy.com/" />
     <meta name="twitter:title" content="Shiny Power Solution Academy | Solar Training in Ibadan, Nigeria" />
     <meta name="twitter:description" content="Get hands-on solar installation training in Ibadan. Certified by industry experts. Join 1200+ students across Africa. Enroll now!" />
-    <meta name="twitter:image" content="https://shinypowersolutionacademy.netlify.app/shiny-logo-1.png" />
+    <meta name="twitter:image" content="https://shinypoweracademy.com/shiny-logo-1.png" />
     <meta name="twitter:site" content="@shinypowersolution" />
 
     <!-- ========== FAVICON ========== -->
@@ -63,13 +63,14 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "EducationalOrganization",
-          "@id": "https://shinypowersolutionacademy.netlify.app/#organization",
+          "@type": "LocalBusiness",
+          "@id": "https://shinypoweracademy.com/#organization",
           "name": "Shiny Power Solution Academy",
           "alternateName": "SPS Academy",
-          "url": "https://shinypowersolutionacademy.netlify.app/",
-          "logo": "https://shinypowersolutionacademy.netlify.app/shiny-logo-1.png",
-          "description": "Shiny Power Solution Academy offers hands-on solar installation training in Ibadan, Oyo State, Nigeria. We bridge the skills gap in Nigeria's booming solar energy sector.",
+          "url": "https://shinypoweracademy.com/",
+          "logo": "https://shinypoweracademy.com/shiny-logo-1.png",
+          "image": "https://shinypoweracademy.com/shiny-logo-1.png",
+          "description": "The leading Solar Installation Training Academy in Ibadan, Nigeria. Hands-on training in solar panels, inverters, and renewable energy systems.",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Exotic Filling Station, Opposite Cheshire Sango, Eleyele Express",
@@ -77,8 +78,28 @@
             "addressRegion": "Oyo State",
             "addressCountry": "NG"
           },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 7.4116,
+            "longitude": 3.8615
+          },
           "telephone": "+2349048583593",
           "email": "shinymediaempire@gmail.com",
+          "priceRange": "$$",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
           "sameAs": [
             "https://www.instagram.com/shinypowersolutionacademy",
             "https://www.facebook.com/shinypowersolution",
@@ -89,49 +110,33 @@
           "areaServed": {
             "@type": "City",
             "name": "Ibadan"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://shinypoweracademy.com/#course",
+          "name": "Solar Installation & Business Training",
+          "description": "Comprehensive hands-on solar panel installation training covering fundamentals, system design, inverter installation, battery systems, and business launch.",
+          "provider": {
+            "@id": "https://shinypoweracademy.com/#organization"
           },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Solar Energy Training Programs",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Course",
-                  "name": "Solar Installation & Business Training",
-                  "description": "Comprehensive hands-on solar panel installation training covering fundamentals, system design, inverter installation, battery systems, and business launch.",
-                  "provider": {
-                    "@type": "EducationalOrganization",
-                    "name": "Shiny Power Solution Academy"
-                  },
-                  "educationalLevel": "Beginner to Advanced",
-                  "hasCourseInstance": {
-                    "@type": "CourseInstance",
-                    "courseMode": "in-person",
-                    "location": {
-                      "@type": "Place",
-                      "name": "Shiny Power Solution Academy",
-                      "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Ibadan",
-                        "addressRegion": "Oyo State",
-                        "addressCountry": "NG"
-                      }
-                    }
-                  }
-                }
-              }
-            ]
+          "educationalLevel": "Beginner to Advanced",
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "in-person",
+            "location": {
+              "@id": "https://shinypoweracademy.com/#organization"
+            }
           }
         },
         {
           "@type": "WebSite",
-          "@id": "https://shinypowersolutionacademy.netlify.app/#website",
-          "url": "https://shinypowersolutionacademy.netlify.app/",
+          "@id": "https://shinypoweracademy.com/#website",
+          "url": "https://shinypoweracademy.com/",
           "name": "Shiny Power Solution Academy",
           "description": "Solar installation training in Ibadan, Nigeria",
           "publisher": {
-            "@id": "https://shinypowersolutionacademy.netlify.app/#organization"
+            "@id": "https://shinypoweracademy.com/#organization"
           }
         }
       ]

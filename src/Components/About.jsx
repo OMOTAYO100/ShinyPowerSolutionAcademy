@@ -58,7 +58,7 @@ function About() {
           </h2>
 
           <p className="text-[#737373] dark:text-[#a0a0b0] text-lg transition-colors duration-300">
-            The solar industry in Nigeria is booming but there's a serious
+            The solar industry in Nigeria (and specifically Ibadan) is booming, but there's a serious
             shortage of skilled installers.
           </p>
           <p className="text-[#737373] dark:text-[#a0a0b0] text-lg transition-colors duration-300">

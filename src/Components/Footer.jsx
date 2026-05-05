@@ -80,9 +80,23 @@ function Footer() {
           <div className="flex flex-col">
             <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-6 text-lg transition-colors duration-300">Contact</h3>
             <div className="space-y-4 text-gray-700 dark:text-gray-400 font-medium text-sm leading-relaxed transition-colors duration-300">
-              <p>Address: Exotic filling station, opposite<br/>Cheshire Sango, Eleyele Express, Ibadan</p>
+              <p>
+                <a 
+                  href="https://www.google.com/maps/search/Shiny+Power+Solution+Academy+Ibadan" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[#00A859] transition-colors"
+                >
+                  Address: Exotic filling station, opposite<br/>Cheshire Sango, Eleyele Express, Ibadan
+                </a>
+              </p>
               <p>Email: shinymediaempire@gmail.com</p>
               <p>Phone: +234 904 858 3593</p>
+              <div className="pt-2">
+                <p className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-500 font-bold mb-1">Opening Hours</p>
+                <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+                <p>Sat: 10:00 AM - 2:00 PM</p>
+              </div>
             </div>
           </div>
 
@@ -104,6 +118,17 @@ function Footer() {
               </a>
               <a href="https://www.tiktok.com/@shinypower.academ?_r=1&_t=ZS-965AH95FZy5" target="_blank" rel="noopener noreferrer">
                 <FaTiktok className={iconClass} />
+              </a>
+            </div>
+            <div className="mt-6">
+              <a 
+                href="https://www.google.com/maps/search/Shiny+Power+Solution+Academy+Ibadan" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 rounded-lg text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors shadow-sm"
+              >
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" className="h-4" />
+                <span>Review us</span>
               </a>
             </div>
           </div>
