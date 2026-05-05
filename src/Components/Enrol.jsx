@@ -15,9 +15,9 @@ function Enrol() {
         <h3 className="uppercase text-xs font-bold px-4 py-2 bg-[#E6F6EE] dark:bg-[#0d2818] text-[#00A859] dark:text-[#00C96B] rounded-full tracking-wider mb-6 transition-colors duration-300">
           Registration
         </h3>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold italic text-black dark:text-gray-100 tracking-tight text-center transition-all duration-300">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold italic text-black dark:text-gray-100 tracking-tight text-center transition-all duration-300">
           Ready To Enroll? <span className="text-[#00A859] dark:text-[#00C96B]">Here's How.</span>
-        </h1>
+        </h2>
       </motion.div>
       
       <div className="relative flex flex-col md:flex-row justify-center items-start gap-6 md:gap-10 p-6 md:p-16 font-lato max-w-[1200px] mx-auto w-full mt-8">

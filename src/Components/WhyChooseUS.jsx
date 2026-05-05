@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Cards } from "../data/WhyChooseUsData";
-import { Icon } from "@iconify/react";
+import { IoIosArrowUp } from "react-icons/io";
 import ChooseUsImage1 from "../assets/WhyChooseUs-Image1.webp";
 import ChooseUsImage2 from "../assets/WhyChooseUs-Image2.webp";
 import ChooseUsImage3 from "../assets/WhyChooseUs-Image3.webp";
@@ -54,9 +54,8 @@ function WhyChooseUS() {
             >
               <div className="flex flex-col sm:flex-row justify-between" onClick={() => toggleImage(index)}>
                 <div className="flex items-center sm:justify-center gap-4 cursor-pointer mb-4 sm:mb-0">
-                  <Icon
-                    icon="solar:arrow-up-linear"
-                    className={`w-8 h-8 bg-green-500 text-white rounded-full p-2 cursor-pointer transition-transform duration-300 ${openIndex === index ? "rotate-45" : "rotate-150"}`}
+                  <IoIosArrowUp
+                    className={`w-8 h-8 bg-green-500 text-white rounded-full p-2 cursor-pointer transition-transform duration-300 ${openIndex === index ? "rotate-180" : "rotate-0"}`}
                   />
                   <h2 className="text-xl sm:text-2xl text-[#00A859] dark:text-[#00C96B] font-semibold font-lato transition-colors duration-300">
                     {card.title}

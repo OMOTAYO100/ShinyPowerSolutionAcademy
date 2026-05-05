@@ -13,10 +13,10 @@ function About() {
   ];
   return (
     <>
-      <div className="mt-8 flex flex-col justify-center items-center transition-colors duration-300">
-        <h1 className="p-2 rounded-full bg-[#E6F6EE] dark:bg-[#0d2818] text-[#00A859] dark:text-[#00C96B] transition-colors duration-300">
+      <div id="about" className="mt-8 flex flex-col justify-center items-center transition-colors duration-300">
+        <h2 className="p-2 rounded-full bg-[#E6F6EE] dark:bg-[#0d2818] text-[#00A859] dark:text-[#00C96B] transition-colors duration-300">
           Our Bragging Rights
-        </h1>
+        </h2>
         <div className="overflow-hidden w-full mt-8">
           <motion.ul
             className="flex gap-8 w-max leading-7.5"
@@ -28,19 +28,20 @@ function About() {
             }}
           >
             {/* Render twice for seamless loop */}
-            {[...items, ...items,].map((item, index) => (
+            {[...items, ...items].map((item, index) => (
               <li
                 key={index}
-                className="text-[#595959] dark:text-[#8888a0] font-lato text-xl whitespace-nowrap transition-colors duration-300"
+                className="flex items-center gap-2 text-[#595959] dark:text-[#8888a0] font-lato text-xl whitespace-nowrap transition-colors duration-300"
               >
+                <span className="text-[#00A859] dark:text-[#00C96B]" aria-hidden="true">✓</span>
                 {item}
               </li>
             ))}
           </motion.ul>
         </div>
       </div>
-      <section id="about" className="p-6 mt-12 flex flex-col-reverse md:flex-row items-center sm:gap-12 justify-center overflow-hidden">
-        <motion.div 
+      <section className="p-6 mt-12 flex flex-col-reverse md:flex-row items-center sm:gap-12 justify-center overflow-hidden">
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -51,10 +52,10 @@ function About() {
             About The Academy
           </h3>
 
-          <h1 className="w-full text-3xl sm:text-[70px] font-bold sm:leading-[70px] font-lato dark:text-gray-100 transition-colors duration-300">
+          <h2 className="w-full text-3xl sm:text-[70px] font-bold sm:leading-[70px] font-lato dark:text-gray-100 transition-colors duration-300">
             Practical Skills That{" "}
             <span className="text-[#008c4a] dark:text-[#00C96B]">Actually Get You Hired</span>
-          </h1>
+          </h2>
 
           <p className="text-[#737373] dark:text-[#a0a0b0] text-lg transition-colors duration-300">
             The solar industry in Nigeria is booming but there's a serious
@@ -70,14 +71,15 @@ function About() {
           </p>
 
           <a
-            href="#"
+            href="#curriculum"
+            aria-label="Explore our solar installation curriculum"
             className="bg-[#00A859] text-white py-2 px-4 rounded-full hover:bg-[#008c4a] transition duration-300"
           >
             Explore the Curriculum
           </a>
         </motion.div>
 
-        <motion.figure 
+        <motion.figure
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -86,8 +88,9 @@ function About() {
         >
           <img
             src={AboutImg}
-            alt="About Us"
+            alt="Solar installation training session at Shiny Power Solution Academy, Ibadan Nigeria"
             className="w-full h-full object-cover rounded-2xl shadow-lg"
+            loading="lazy"
           />
         </motion.figure>
       </section>

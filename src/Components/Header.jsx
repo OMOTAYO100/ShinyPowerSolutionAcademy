@@ -20,11 +20,11 @@ function Header() {
   );
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
-  // Cycle hero images every 5 seconds
+  // Cycle hero images every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHeroIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 10000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
@@ -98,7 +98,7 @@ function Header() {
           <img
             className="size-14 sm:size-16 rounded-full object-cover"
             src={ShinyLogo}
-            alt="Shiny Logo"
+            alt="Shiny Power Solution Academy logo"
           />
         </a>
 
@@ -183,11 +183,12 @@ function Header() {
       {/* ===== HERO CONTENT ===== */}
       <section className="relative z-10">
         {/* RENEWABLE ENERGY Watermark */}
-        <motion.h1 
+        <motion.p
+          aria-hidden="true"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="mt-16 sm:mt-4 md:mt-2 text-center text-[38px] sm:text-[80px] md:text-[100px] lg:text-[130px] font-bold uppercase tracking-wide "
+          className="mt-16 sm:mt-4 md:mt-2 text-center text-[38px] sm:text-[80px] md:text-[100px] lg:text-[130px] font-bold uppercase tracking-wide select-none pointer-events-none"
           style={{
             WebkitTextStroke: "1px rgba(255,255,255,0.2)",
             WebkitTextFillColor: "#4c4c4c",
@@ -195,12 +196,12 @@ function Header() {
           }}
         >
           Renewable Energy
-        </motion.h1>
+        </motion.p>
 
         {/* Main Content Area */}
         <div className="flex flex-col gap-5 mt-25 sm:mt-14 lg:mt-20 px-6 sm:px-10 lg:px-14 overflow-hidden">
           {/* Heading */}
-          <motion.h2 
+          <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -209,7 +210,7 @@ function Header() {
             Learn Solar. <br />
             Build A Career. <br />
             Power The Future.
-          </motion.h2>
+          </motion.h1>
 
           {/* Description */}
           <motion.p 
@@ -250,10 +251,10 @@ function Header() {
             <div className="flex items-center gap-3 bg-transparent border border-white/30 px-4 py-2.5 rounded-full md:mt-4 md:w-fit">
               {/* Avatars */}
               <div className="flex -space-x-3">
-                <img src={AvatarImg1} alt="Student" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
-                <img src={AvatarImg2} alt="Student" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
-                <img src={AvatarImg3} alt="Student" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
-                <img src={AvatarImg4} alt="Student" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
+                <img src={AvatarImg1} alt="SPS Academy graduate" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
+                <img src={AvatarImg2} alt="SPS Academy graduate" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
+                <img src={AvatarImg3} alt="SPS Academy graduate" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
+                <img src={AvatarImg4} alt="SPS Academy graduate" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
                 <div className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#00A859] border-2 border-white font-bold text-sm">
                   +
                 </div>
@@ -278,4 +279,5 @@ function Header() {
   );
 }
 
-export default Header;;
+export default Header;
+

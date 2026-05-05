@@ -1,7 +1,7 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter, FaTiktok } from "react-icons/fa6";
 import ShinyLogo from '../assets/shiny-logo-1.png';
 import footerImg1 from '../assets/footer-img1.webp';
 import footerImg2 from '../assets/footer-img2.webp'; 
@@ -27,12 +27,12 @@ function Footer() {
               Nigeria's energy transition is happening now. Get your seat before the next cohort fills up.
             </h2>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#00A859] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-sm">
+              <a href="#enrol" className="bg-[#00A859] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-sm">
                 Enroll Now
-              </button>
-              <button className="border-2 border-[#00A859] text-[#00A859] dark:text-[#00C96B] dark:border-[#00C96B] px-8 py-3.5 rounded-full font-semibold hover:bg-green-50 dark:hover:bg-[#00A859]/10 transition-colors bg-transparent">
+              </a>
+              <a href="#curriculum" className="border-2 border-[#00A859] text-[#00A859] dark:text-[#00C96B] dark:border-[#00C96B] px-8 py-3.5 rounded-full font-semibold hover:bg-green-50 dark:hover:bg-[#00A859]/10 transition-colors bg-transparent">
                 View Curriculum
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -40,13 +40,13 @@ function Footer() {
         {/* Decorative Graphics */}
         <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block pointer-events-none">
           <div className="absolute top-[-20%] right-[20%] w-[300px] h-[300px] rounded-full overflow-hidden shadow-md">
-            <img src={footerImg1} alt="Solar Panels" className="w-full h-full object-cover" />
+            <img src={footerImg1} alt="Solar panels installed on rooftop in Ibadan Nigeria" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="absolute top-[25%] right-[18%] w-[340px] h-[340px] rounded-full overflow-hidden shadow-md z-10">
-            <img src={footerImg2} alt="Solar Panels Grid" className="w-full h-full object-cover" />
+            <img src={footerImg2} alt="Solar panel grid system for homes in Oyo State Nigeria" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="absolute bottom-[-30%] right-[23%] w-[250px] h-[250px]  shadow-sm z-20">
-            <img src={footerImg3} alt="Solar Installation" className="w-full h-full object-cover rounded-full" />
+            <img src={footerImg3} alt="Solar installation technician at work in Nigeria" className="w-full h-full object-cover rounded-full" loading="lazy" />
           </div>
         </div>
       </motion.div>
@@ -62,7 +62,7 @@ function Footer() {
         >
           {/* Logo */}
           <div className="flex flex-col items-start">
-            <img src={ShinyLogo} alt="Shiny Power Solution" className="w-32 object-contain" />
+            <img src={ShinyLogo} alt="Shiny Power Solution Academy" className="w-32 object-contain" loading="lazy" />
           </div>
           
           {/* Quick Links */}
@@ -102,6 +102,9 @@ function Footer() {
               <a href="https://twitter.com/shinypowersolution" target="_blank" rel="noopener noreferrer">
                 <FaXTwitter className={iconClass} />
               </a>
+              <a href="https://www.tiktok.com/@shinypower.academ?_r=1&_t=ZS-965AH95FZy5" target="_blank" rel="noopener noreferrer">
+                <FaTiktok className={iconClass} />
+              </a>
             </div>
           </div>
         </motion.div>
@@ -125,14 +128,14 @@ function Footer() {
           ></div>
           
           <div className="relative z-10 w-full overflow-hidden flex flex-col items-center justify-center pt-16 md:pt-24 pb-8">
-            <h1 className="text-[33vw] md:text-[clamp(200px,33vw,490px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300">
+            <p aria-hidden="true" className="text-[33vw] md:text-[clamp(200px,33vw,490px)] leading-[0.8] font-bold text-[#75D099] dark:text-[#1a5c38] select-none text-center tracking-tight transition-colors duration-300 pointer-events-none">
               SHINY
-            </h1>
+            </p>
             
             {/* Bottom Copyright Row */}
             <div className="w-full max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center mt-12 md:mt-20 z-20">
               <div className="flex gap-5 text-gray-500 dark:text-gray-400 mb-4 md:mb-0 bg-white/60 dark:bg-[#1a1d27]/60 p-2 rounded-xl backdrop-blur-sm transition-colors duration-300">
-                <a href="https://www.instagram.com/shinypowersolution" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/shinypowersolutionacademy?igsh=dnkwdXgzMjFrczZl&utm_source=qr" target="_blank" rel="noopener noreferrer">
                   <FaInstagram className={iconClass} />
                 </a>
                 <a href="https://www.facebook.com/shinypowersolution" target="_blank" rel="noopener noreferrer">
@@ -143,6 +146,9 @@ function Footer() {
                 </a>
                 <a href="https://twitter.com/shinypowersolution" target="_blank" rel="noopener noreferrer">
                   <FaXTwitter className={iconClass} />
+                </a>
+                <a href="https://www.tiktok.com/@shinypower.academ?_r=1&_t=ZS-965AH95FZy5" target="_blank" rel="noopener noreferrer">
+                  <FaTiktok className={iconClass} />
                 </a>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-sm font-semibold tracking-wide bg-white/60 dark:bg-[#1a1d27]/60 p-2 rounded-xl backdrop-blur-sm transition-colors duration-300">

@@ -68,10 +68,10 @@ function Curriculum() {
             <h3 className="px-6 py-2 text-[#00A859] dark:text-[#00C96B] bg-[#E6F6EE] dark:bg-[#0d2818] rounded-full text-sm font-lato font-semibold w-max transition-colors duration-300">
               What you will learn
             </h3>
-            <h1 className="sm:w-[50%] mt-6 text-3xl sm:text-4xl md:text-6xl font-bold font-lato dark:text-gray-100 transition-colors duration-300">
+            <h2 className="sm:w-[50%] mt-6 text-3xl sm:text-4xl md:text-6xl font-bold font-lato dark:text-gray-100 transition-colors duration-300">
               A complete Curriculum built for{" "}
               <span className="text-[#00A859] dark:text-[#00C96B]">Real Results</span>
-            </h1>
+            </h2>
           </motion.div>
 
           {/* Desktop grid */}
