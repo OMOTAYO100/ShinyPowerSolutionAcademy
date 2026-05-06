@@ -57,7 +57,7 @@ function Curriculum() {
 
   return (
     <>
-      <section id="curriculum" className="p-6">
+      <section id="curriculum" className="p-6 md:p-12 mt-12">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}

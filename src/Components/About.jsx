@@ -40,7 +40,7 @@ function About() {
           </motion.ul>
         </div>
       </div>
-      <section className="p-6 mt-12 flex flex-col-reverse md:flex-row items-center sm:gap-12 justify-center overflow-hidden">
+      <section className="p-6 md:p-12 mt-12 flex flex-col-reverse md:flex-row items-center sm:gap-12 justify-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
