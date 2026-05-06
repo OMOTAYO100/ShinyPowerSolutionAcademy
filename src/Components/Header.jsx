@@ -207,7 +207,7 @@ function Header() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
             className="text-[40px] sm:text-5xl md:text-[55px] lg:text-7xl text-white font-bold font-grotesk leading-[1.1] md:w-[85%] lg:w-[80%]"
           >
-            Learn Solar <br />
+            Learn Solar. <br />
             Build A Career. <br />
             Power The Future.
           </motion.h1>
