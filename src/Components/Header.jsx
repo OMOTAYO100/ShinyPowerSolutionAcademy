@@ -188,7 +188,7 @@ function Header() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="mt-16 sm:mt-4 md:mt-2 text-center text-[38px] sm:text-[80px] md:text-[100px] lg:text-[130px] font-bold uppercase tracking-wide select-none pointer-events-none"
+          className="mt-16 sm:mt-4 md:mt-2 text-center text-[38px] sm:text-[80px] md:text-[100px] lg:text-[140px] font-bold uppercase tracking-wide select-none pointer-events-none"
           style={{
             WebkitTextStroke: "1px rgba(255,255,255,0.2)",
             WebkitTextFillColor: "#4c4c4c",
@@ -207,8 +207,8 @@ function Header() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
             className="text-[40px] sm:text-5xl md:text-[55px] lg:text-7xl text-white font-bold font-grotesk leading-[1.1] md:w-[85%] lg:w-[80%]"
           >
-            Professional Solar Installation <br />
-            Training In Ibadan. <br />
+            Learn Solar <br />
+            Build A Career. <br />
             Power The Future.
           </motion.h1>
 
@@ -235,13 +235,13 @@ function Header() {
             <div className="flex items-center gap-4">
               <a
                 href="#enrol"
-                className="bg-[#00A859] text-white px-8 sm:px-10 py-3 rounded-full font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-[#008c4a] hover:scale-105 transition-all duration-300 shadow-lg"
+                className="bg-[#00A859] text-white px-12 sm:px-10 py-3 rounded-full font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-[#008c4a] hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 Enroll Now
               </a>
               <a
                 href="#footer"
-                className="px-8 sm:px-10 py-3 rounded-full text-white border-2 border-white font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-white hover:text-[#333] transition-all duration-300"
+                className="px-12 sm:px-10 py-3 rounded-full text-white border-2 border-white font-lato font-semibold text-sm sm:text-base md:text-sm hover:bg-white hover:text-[#333] transition-all duration-300"
               >
                 Contact Us
               </a>
